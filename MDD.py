@@ -22,8 +22,8 @@ app.add_middleware(
 )
 
 class DevDairy(BaseModel):
-    title: str = 'My Dev Dairy',
-    description: str = 'This is a Portfolio API for my Dev Dairy',
+    title: tuple = 'My Dev Dairy',
+    description: tuple = 'This is a Portfolio API for my Dev Dairy',
     url: str = 'https://github.com/KalyanKanuri/My_Dev_Diary'
     technologies: list = ['Python', 'FastAPI', 'PostgreSQL', 'Docker', 'React']
 
