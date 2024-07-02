@@ -1,7 +1,7 @@
 const Header = () => (
   <div className="navbar bg-base-100">
     <div className="navbar-start w-1/3">
-      <a className="btn btn-ghost normal-case text-xl">
+      <a href="#" className="btn btn-ghost normal-case text-xl">
         <code className="bg-base-200 px-3 py-2 rounded">
           <span className="font-mono text-lg">{'<'}</span>
           <span className="font-pacifico text-primary text-2xl">Kalyan Kanuri</span>
@@ -12,7 +12,7 @@ const Header = () => (
     <div className="navbar-end w-2/3">
       {/* Desktop Menu */}
       <ul className="menu menu-horizontal px-1 hidden lg:flex justify-end w-full">
-        {['Homepage', 'Education', 'Experience', 'Contributions', 'Portfolio', 'Contact Me'].map((item, index) => (
+        {['Home', 'Education', 'Experience', 'Contributions', 'Portfolio', 'Contact Me'].map((item, index) => (
           <li key={index}>
             <a className="font-inter text-base font-semibold text-indigo-600 hover:text-green-500 transition-colors duration-300 px-3">
               {item}
@@ -51,7 +51,7 @@ const Header = () => (
         <ul
           tabIndex={0}
           className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-          {['Homepage', 'Education', 'Experience', 'Contributions', 'Portfolio', 'Contact Me'].map((item, index) => (
+          {['Home', 'Education', 'Experience', 'Contributions', 'Portfolio', 'Contact Me'].map((item, index) => (
             <li key={index}>
               <a className="font-inter text-base font-semibold text-indigo-600 hover:text-green-500 transition-colors duration-300">
                 {item}
