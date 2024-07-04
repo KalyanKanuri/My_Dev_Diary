@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useState } from 'react';
 import ScrollTrigger from 'react-scroll-trigger';
-import { FaLinkedin, FaGithub, FaInstagram, FaEnvelope, FaPython, FaHtml5, FaCss3Alt, FaJs, FaReact, FaDatabase, FaAws } from 'react-icons/fa';
-import { SiFastapi, SiFlask, SiSelenium, SiScrapy, SiPostgresql, SiPytorch, SiTensorflow, SiTypescript, SiGooglecloud } from 'react-icons/si';
+import { FaLinkedin, FaGithub, FaInstagram, FaEnvelope, FaJava, FaPython, FaHtml5, FaCss3Alt, FaJs, FaReact, FaDatabase, FaAws } from 'react-icons/fa';
+import { SiSpringboot, SiFastapi, SiFlask, SiSelenium, SiScrapy, SiPostgresql, SiPytorch, SiTensorflow, SiTypescript, SiGooglecloud } from 'react-icons/si';
 import Hello from '../assets/static/avatar1.svg';
 import fullstackIllustration from '../assets/static/fullstack.svg';
 import learningIllustration from '../assets/static/learning.svg';
@@ -53,10 +53,12 @@ const Home = () => {
           <section className={`py-16 transition-all duration-1000 ${expertiseVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <h2 className="text-4xl font-bold text-center mb-8">Expertise</h2>
             
-            <div className="flex flex-wrap justify-center text-4xl mb-8 space-x-4">
+            <div className="flex flex-wrap justify-center text-4xl mb-8 space-x-4">              
               <FaPython className="text-blue-500" />
               <SiFastapi className="text-teal-500" />
               <SiFlask className="text-gray-500" />
+              <FaJava className="text-blue-500" />
+              <SiSpringboot className="text-red-500" />              
               <SiSelenium className="text-yellow-500" />
               <SiScrapy className="text-green-500" />
               <SiPytorch className="text-purple-500" />
