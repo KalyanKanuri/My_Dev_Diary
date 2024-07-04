@@ -1,7 +1,16 @@
+const menuItems = [
+  { label: 'Home', url: '/' },
+  { label: 'Education', url: '/education' },
+  { label: 'Experience', url: '/experience' },
+  { label: 'Contributions', url: '/contributions' },
+  { label: 'Projects', url: '/projects' },
+  { label: 'Contact Me', url: '/contact' }
+];
+
 const Header = () => (
   <div className="navbar bg-base-100">
     <div className="navbar-start w-1/3">
-      <a href="#" className="btn btn-ghost normal-case text-xl">
+      <a href="/" className="btn btn-ghost normal-case text-xl">
         <code className="bg-base-200 px-3 py-2 rounded">
           <span className="font-mono text-lg">{'<'}</span>
           <span className="font-pacifico text-primary text-2xl">Kalyan Kanuri</span>
@@ -12,10 +21,10 @@ const Header = () => (
     <div className="navbar-end w-2/3">
       {/* Desktop Menu */}
       <ul className="menu menu-horizontal px-1 hidden lg:flex justify-end w-full">
-        {['Home', 'Education', 'Experience', 'Contributions', 'Portfolio', 'Contact Me'].map((item, index) => (
+        {menuItems.map((item, index) => (
           <li key={index}>
-            <a className="font-inter text-base font-semibold text-indigo-600 hover:text-green-500 transition-colors duration-300 px-3">
-              {item}
+            <a href={item.url} className="font-inter text-base font-semibold text-indigo-600 hover:text-green-500 transition-colors duration-300 px-3">
+              {item.label}
             </a>
           </li>
         ))}
@@ -23,10 +32,10 @@ const Header = () => (
       
       {/* Tablet Menu */}
       <ul className="menu menu-horizontal px-1 hidden md:flex lg:hidden justify-end w-full">
-        {['Home', 'Edu', 'Exp', 'Contrib', 'Portfolio', 'Contact'].map((item, index) => (
+        {menuItems.map((item, index) => (
           <li key={index}>
-            <a className="font-inter text-sm font-semibold text-indigo-600 hover:text-green-500 transition-colors duration-300 px-2">
-              {item}
+            <a href={item.url} className="font-inter text-sm font-semibold text-indigo-600 hover:text-green-500 transition-colors duration-300 px-2">
+              {item.label.length > 4 ? item.label.slice(0, 4) : item.label}
             </a>
           </li>
         ))}
@@ -51,10 +60,10 @@ const Header = () => (
         <ul
           tabIndex={0}
           className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-          {['Home', 'Education', 'Experience', 'Contributions', 'Portfolio', 'Contact Me'].map((item, index) => (
+          {menuItems.map((item, index) => (
             <li key={index}>
-              <a className="font-inter text-base font-semibold text-indigo-600 hover:text-green-500 transition-colors duration-300">
-                {item}
+              <a href={item.url} className="font-inter text-base font-semibold text-indigo-600 hover:text-green-500 transition-colors duration-300">
+                {item.label}
               </a>
             </li>
           ))}
