@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import Education from './pages/Education';
 import Experience from './pages/Experience';
 import Projects from './pages/Projects';
-import Contact from "./pages/ContactMe";
+import ContactMe from "./pages/ContactMe";
 
 function App() {
   const [message, setMessage] = useState('');
@@ -31,7 +31,7 @@ function App() {
         <Route path="/education" element={<Education />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<ContactMe />} />
       </Routes>
       <div className="toast">
         <div className="alert alert-info">
