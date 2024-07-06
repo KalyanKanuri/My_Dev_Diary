@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useState } from 'react';
 import ScrollTrigger from 'react-scroll-trigger';
-import { FaLinkedin, FaGithub, FaInstagram, FaEnvelope, FaJava, FaPython, FaHtml5, FaCss3Alt, FaJs, FaReact, FaDatabase, FaAws } from 'react-icons/fa';
-import { SiSpringboot, SiFastapi, SiFlask, SiSelenium, SiScrapy, SiPostgresql, SiPytorch, SiTensorflow, SiTypescript, SiGooglecloud } from 'react-icons/si';
+import { FaLinkedin, FaGithub, FaInstagram, FaEnvelope, FaJava, FaPython, FaHtml5, FaCss3Alt, FaJs, FaReact, FaDatabase, FaAws, FaGitAlt } from 'react-icons/fa';
+import { SiSpringboot, SiFastapi, SiFlask, SiSelenium, SiScrapy, SiPostgresql, SiPytorch, SiTensorflow, SiTypescript, SiGooglecloud, SiGitlab } from 'react-icons/si';
 import Hello from '../assets/static/avatar1.svg';
 import fullstackIllustration from '../assets/static/fullstack.svg';
 import learningIllustration from '../assets/static/learning.svg';
@@ -72,6 +72,8 @@ const Home = () => {
               <FaDatabase className="text-gray-500" />
               <FaAws className="text-orange-400" />
               <SiGooglecloud className="text-blue-500" />
+              <FaGitAlt className="text-orange-600" />
+              <SiGitlab className="text-orange-500" />
             </div>
             
             <ScrollTrigger onEnter={() => setCardVisible(true)} onExit={() => setCardVisible(false)}>
@@ -87,6 +89,7 @@ const Home = () => {
                       <li>Creating RESTful APIs and microservices</li>
                       <li>Implementing responsive and interactive user interfaces</li>
                       <li>Optimizing database performance and queries</li>
+                      <li>Version control and collaboration using Git and GitHub</li>
                     </ul>
                   </div>
                 </div>
@@ -102,6 +105,7 @@ const Home = () => {
                       <li>Deepening knowledge in cloud computing and serverless architectures</li>
                       <li>Advancing frontend skills with modern frameworks and libraries</li>
                       <li>Studying best practices in software architecture and design patterns</li>
+                      <li>Mastering advanced Git workflows and DevOps practices</li>
                     </ul>
                   </div>
                 </div>
@@ -124,6 +128,7 @@ const Home = () => {
                   <li>Designing and implementing cloud-native applications</li>
                   <li>Managing and optimizing cloud infrastructure on AWS and GCP</li>
                   <li>Deploying and scaling applications using containerization and orchestration tools</li>
+                  <li>Implementing CI/CD pipelines with Git-based workflows</li>
                 </ul>
               </div>
             </div>
