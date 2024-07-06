@@ -1,15 +1,15 @@
 const menuItems = [
-  { label: 'Home', url: '/' },
-  { label: 'Education', url: '/education' },
-  { label: 'Experience', url: '/experience' },
-  { label: 'Contributions', url: '/contributions' },
-  { label: 'Projects', url: '/projects' },
-  { label: 'Contact Me', url: '/contact' }
+  { label: 'Welcome', url: '/' },
+  { label: 'Learning Journey', url: '/education' },
+  { label: 'Career Path', url: '/experience' },
+  { label: 'Open Source Impact', url: '/contributions' },
+  { label: 'Portfolio Showcase', url: '/projects' },
+  { label: 'Let\'s Connect', url: '/contact' }
 ];
 
 const Header = () => (
   <div className="navbar bg-base-100">
-    <div className="navbar-start w-1/3">
+    <div className="navbar-start w-1/4">
       <a href="/" className="btn btn-ghost normal-case text-xl">
         <code className="bg-base-200 px-3 py-2 rounded">
           <span className="font-mono text-lg">{'<'}</span>
@@ -18,12 +18,12 @@ const Header = () => (
         </code>
       </a>
     </div>
-    <div className="navbar-end w-2/3">
+    <div className="navbar-end w-3/4">
       {/* Desktop Menu */}
       <ul className="menu menu-horizontal px-1 hidden lg:flex justify-end w-full">
         {menuItems.map((item, index) => (
           <li key={index}>
-            <a href={item.url} className="font-inter text-base font-semibold text-indigo-600 hover:text-green-500 transition-colors duration-300 px-3">
+            <a href={item.url} className="font-inter text-sm font-semibold text-indigo-600 hover:text-green-500 transition-colors duration-300 px-2 whitespace-nowrap">
               {item.label}
             </a>
           </li>
@@ -34,8 +34,8 @@ const Header = () => (
       <ul className="menu menu-horizontal px-1 hidden md:flex lg:hidden justify-end w-full">
         {menuItems.map((item, index) => (
           <li key={index}>
-            <a href={item.url} className="font-inter text-sm font-semibold text-indigo-600 hover:text-green-500 transition-colors duration-300 px-2">
-              {item.label.length > 4 ? item.label.slice(0, 4) : item.label}
+            <a href={item.url} className="font-inter text-xs font-semibold text-indigo-600 hover:text-green-500 transition-colors duration-300 px-1 whitespace-nowrap">
+              {item.label.split(' ')[0]}
             </a>
           </li>
         ))}
