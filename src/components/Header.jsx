@@ -2,7 +2,7 @@ const menuItems = [
   { label: 'Welcome', url: '/' },
   { label: 'Learning Journey', url: '/education' },
   { label: 'Career Path', url: '/experience' },
-  { label: 'Open Source Impact', url: '/contributions' },
+  { label: 'Coding Activity', url: '/coding' },
   { label: 'Portfolio Showcase', url: '/projects' },
   { label: 'Let\'s Connect', url: '/contact' }
 ];
