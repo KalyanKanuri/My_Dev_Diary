@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/Home';
 import Education from './pages/Education';
@@ -11,7 +11,7 @@ import ContactMe from "./pages/ContactMe";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/My_Dev_Diary">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
