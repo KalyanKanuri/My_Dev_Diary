@@ -11,7 +11,7 @@ import ContactMe from "./pages/ContactMe";
 
 function App() {
   return (
-    <Router basename="/My_Dev_Diary">
+    <Router>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
