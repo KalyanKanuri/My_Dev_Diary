@@ -22,7 +22,7 @@ const Projects = () => {
         { icon: <FaGitAlt />, name: "Git", color: "#F05032" }
       ],
       github: "https://github.com/KalyanKanuri/My_Dev_Diary",
-      live: "https://kalyankanuri.github.io/My_Dev_Diary/",
+      live: "https://my-dev-diary.vercel.app/",
     },
     {
       title: "Food Ordering Platform (QuickByte)",
