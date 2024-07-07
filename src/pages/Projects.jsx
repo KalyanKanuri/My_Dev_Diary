@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import ScrollTrigger from 'react-scroll-trigger';
 import { FaGithub, FaExternalLinkAlt, FaReact, FaPython, FaHtml5, FaCss3Alt, FaJs, FaLinux, FaGitAlt } from 'react-icons/fa';
-import { SiTailwindcss, SiFastapi, SiFlask, SiSqlite, SiGithubpages } from 'react-icons/si';
+import { SiTailwindcss, SiFastapi, SiFlask, SiSqlite, SiVercel } from 'react-icons/si';
 import projectsIllustration from '../assets/static/projects.svg';
 
 const Projects = () => {
@@ -13,17 +13,18 @@ const Projects = () => {
   const projects = [
     {
       title: "Personal Portfolio Website",
-      description: "A responsive portfolio website built with React and Tailwind CSS, showcasing my skills, projects, and experiences. Hosted on GitHub Pages for easy accessibility.",
+      description: "A responsive portfolio website built with React and Tailwind CSS, showcasing my skills, projects, and experiences. Hosted on Vercel for easy accessibility.",
       technologies: [
         { icon: <FaReact />, name: "React", color: "#61DAFB" },
         { icon: <SiTailwindcss />, name: "Tailwind CSS", color: "#06B6D4" },
         { icon: <FaGithub />, name: "GitHub", color: "#181717" },
-        { icon: <SiGithubpages />, name: "GitHub Pages", color: "#222222" },
+        { icon: <SiVercel />, name: "Vercel", color: "#000000" },
         { icon: <FaGitAlt />, name: "Git", color: "#F05032" }
       ],
       github: "https://github.com/KalyanKanuri/My_Dev_Diary",
       live: "https://my-dev-diary.vercel.app/",
     },
+
     {
       title: "Food Ordering Platform (QuickByte)",
       description: "A full-stack Food Ordering application built with Python and Flask. Features include Order Tracking, Payment Support, Admin analytics, and more. Utilizes SQLite for data storage and is deployed on Linux servers.",
