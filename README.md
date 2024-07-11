@@ -26,7 +26,7 @@ My Dev Diary is built with a modern and robust tech stack:
 - **Icons and Animations**:
   - [React Icons](https://react-icons.github.io/react-icons/): For adding beautiful icons
   - [React Scroll Trigger](https://www.npmjs.com/package/react-scroll-trigger): For scroll-based 
-  - [Illustrations](https://undraw.co/illustrations) For SVG's
+  - [Undraw](https://undraw.co/illustrations) For Illustrations
 
 - **Build Tools**:
   - [Vite](https://vitejs.dev/): Next generation frontend tooling for faster and leaner development
