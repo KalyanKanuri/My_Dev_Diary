@@ -150,7 +150,7 @@ This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
 
 ## 📬 Contact
 
-Your Name - [kalyankanuri497@gmail.com](mailto:your.kalyankanuri497@gmail.com)
+[kalyankanuri497@gmail.com](mailto:your.kalyankanuri497@gmail.com)
 
 ---
 
