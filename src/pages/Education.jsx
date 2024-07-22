@@ -29,7 +29,7 @@ const Education = () => {
     {
       name: "Oracle Genrative AI professional",
       issuer: "Oracle",
-      pdfLink: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=D93B271FF40082E6F9CF46144B8E91C61013A336E273B9682E78AE4982A3FB03"
+      pdfLink: "https://pdfhost.io/v/RBOCo9Jis_eCertificate"
     }
   ];
 
