@@ -29,7 +29,7 @@ const Education = () => {
     {
       name: "Oracle Genrative AI professional",
       issuer: "Oracle",
-      pdfLink: "https://brm-certview.oracle.com/ords/certview/ecertificate?ssn=OC5124452&trackId=OCI2024GAIOCP&key=6df513989280906e4ba84bdf26518b4f5620f92d"
+      pdfLink: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=D93B271FF40082E6F9CF46144B8E91C61013A336E273B9682E78AE4982A3FB03"
     }
   ];
 
