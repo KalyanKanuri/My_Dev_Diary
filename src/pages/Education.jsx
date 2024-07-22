@@ -25,6 +25,11 @@ const Education = () => {
       name: "Tensor Flow with Python",
       issuer: "Great Learning",
       pdfLink: "https://olympus.mygreatlearning.com/courses/56698/certificate"
+    },
+    {
+      name: "Oracle Genrative AI professional",
+      issuer: "Oracle",
+      pdfLink: "https://brm-certview.oracle.com/ords/certview/ecertificate?ssn=OC5124452&trackId=OCI2024GAIOCP&key=6df513989280906e4ba84bdf26518b4f5620f92d"
     }
   ];
 
