@@ -5,6 +5,9 @@ import ScrollTrigger from 'react-scroll-trigger';
 import { FaGithub, FaExternalLinkAlt, FaReact, FaPython, FaHtml5, FaCss3Alt, FaJs, FaLinux, FaGitAlt } from 'react-icons/fa';
 import { SiTailwindcss, SiFastapi, SiFlask, SiSqlite, SiVercel } from 'react-icons/si';
 import projectsIllustration from '../assets/static/projects.svg';
+import qbImg from '../assets/static/qb.png';
+import illImg from '../assets/static/ill.png';
+import portfolioImg from '../assets/static/ui-screenshot.png';
 
 const Projects = () => {
   const [headerVisible, setHeaderVisible] = useState(false);
@@ -14,6 +17,7 @@ const Projects = () => {
     {
       title: "Personal Portfolio Website",
       description: "A responsive portfolio website built with React and Tailwind CSS, showcasing my skills, projects, and experiences. Hosted on Vercel for easy accessibility.",
+      image: portfolioImg,
       technologies: [
         { icon: <FaReact />, name: "React", color: "#61DAFB" },
         { icon: <SiTailwindcss />, name: "Tailwind CSS", color: "#06B6D4" },
@@ -28,6 +32,7 @@ const Projects = () => {
     {
       title: "Food Ordering Platform (QuickByte)",
       description: "A full-stack Food Ordering application built with Python and Flask. Features include Order Tracking, Payment Support, Admin analytics, and more. Utilizes SQLite for data storage and is deployed on Linux servers.",
+      image: qbImg, 
       technologies: [
         { icon: <FaPython />, name: "Python", color: "#3776AB" },
         { icon: <SiFlask />, name: "Flask", color: "#000000" },
@@ -44,6 +49,7 @@ const Projects = () => {
     {
       title: "E-Learning Platform (IntelliLearn)",
       description: "An innovative E-Learning platform built with Python and FastAPI. Offers features like course management, user authentication, progress tracking, and interactive learning materials. Uses SQLite for efficient data management.",
+      image: illImg,
       technologies: [
         { icon: <FaPython />, name: "Python", color: "#3776AB" },
         { icon: <SiFastapi />, name: "FastAPI", color: "#009688" },
@@ -59,8 +65,11 @@ const Projects = () => {
   ];
 
   const ProjectCard = ({ project }) => (
-    <div className="card bg-base-200 shadow-xl">
-      <div className="card-body">
+    <div className="card lg:card-side bg-base-200 shadow-xl mb-8">
+      <figure className="lg:w-2/5">
+        <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
+      </figure>
+      <div className="card-body lg:w-3/5">
         <h3 className="card-title text-2xl mb-2">{project.title}</h3>
         <p className="mb-4">{project.description}</p>
         <div className="flex flex-wrap gap-3 text-2xl mb-4">
@@ -115,7 +124,7 @@ const Projects = () => {
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="space-y-8">
               {projects.map((project, index) => (
                 <ProjectCard key={index} project={project} />
               ))}
