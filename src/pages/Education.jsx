@@ -12,7 +12,6 @@ const Education = () => {
   const [skillsVisible, setSkillsVisible] = useState(false);
   const [certificationsVisible, setCertificationsVisible] = useState(false);
   const [extracurricularVisible, setExtracurricularVisible] = useState(false);
-  const [bscOpen, setBscOpen] = useState(false);
   const [mtechOpen, setMtechOpen] = useState(false);
 
   const certifications = [
@@ -33,19 +32,19 @@ const Education = () => {
     }
   ];
 
-  const EducationCard = ({ title, isOpen, toggleOpen, children }) => (
+  const EducationCard = ({ title, isCollapsible = false, isOpen, toggleOpen, children }) => (
     <div className="card bg-base-200 shadow-xl mb-4">
       <div className="card-body">
         <h3 
-          className="card-title text-2xl mb-4 flex items-center justify-between cursor-pointer"
-          onClick={toggleOpen}
+          className={`card-title text-2xl mb-4 flex items-center justify-between ${isCollapsible ? 'cursor-pointer' : ''}`}
+          onClick={isCollapsible ? toggleOpen : undefined}
         >
           <span className="flex items-center">
             <FaGraduationCap className="mr-2" /> {title}
           </span>
-          {isOpen ? <FaChevronUp /> : <FaChevronDown />}
+          {isCollapsible && (isOpen ? <FaChevronUp /> : <FaChevronDown />)}
         </h3>
-        <div className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-96' : 'max-h-0'}`}>
+        <div className={isCollapsible ? `overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-96' : 'max-h-0'}` : ''}>
           {children}
         </div>
       </div>
@@ -73,20 +72,7 @@ const Education = () => {
               </div>
               <div className="lg:w-1/2 flex flex-col justify-center">
                 <EducationCard 
-                  title="M.Tech in Software Engineering (WILP)" 
-                  isOpen={mtechOpen}
-                  toggleOpen={() => setMtechOpen(!mtechOpen)}
-                >
-                  <p className="mb-2"><strong>Institution:</strong> BITS Pilani</p>
-                  <p className="mb-2"><strong>Program:</strong> Work Integrated Learning Program by Wipro </p>
-                  <p className="mb-2"><strong>Expected Graduation:</strong> 2025</p>
-                  <p><strong>Focus Areas:</strong> Advanced Software Engineering, Cloud Computing, AI/ML</p>
-                </EducationCard>
-
-                <EducationCard 
                   title="Bachelor of Computer Science (BSc Computers)"
-                  isOpen={bscOpen}
-                  toggleOpen={() => setBscOpen(!bscOpen)}
                 >
                   <p className="mb-2"><strong>Institution:</strong> Andhra University</p>
                   <p className="mb-2"><strong>Graduation Year:</strong> 2021</p>
