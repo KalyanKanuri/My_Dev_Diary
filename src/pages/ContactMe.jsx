@@ -63,7 +63,7 @@ const ContactMe = () => {
                 <div className="space-y-4">
                   <p className="flex items-center">
                     <FaMapMarkerAlt className="mr-2 text-primary" />
-                    Hyderabad, Telangana, India
+                    Visakhapatnam, Andhra Pradesh, India
                   </p>
                   <p className="flex items-center">
                     <FaPhoneAlt className="mr-2 text-primary" />

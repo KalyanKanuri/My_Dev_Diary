@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useState } from 'react';
 import ScrollTrigger from 'react-scroll-trigger';
-import { FaLinkedin, FaGithub, FaInstagram, FaEnvelope, FaJava, FaPython, FaHtml5, FaCss3Alt, FaJs, FaReact, FaDatabase, FaAws, FaGitAlt } from 'react-icons/fa';
-import { SiSpringboot, SiFastapi, SiFlask, SiSelenium, SiScrapy, SiPostgresql, SiPytorch, SiTensorflow, SiTypescript, SiGooglecloud, SiGitlab } from 'react-icons/si';
+import { FaLinkedin, FaGithub, FaInstagram, FaEnvelope, FaPython, FaHtml5, FaCss3Alt, FaJs, FaReact, FaDatabase, FaAws, FaGitAlt, FaDocker } from 'react-icons/fa';
+import { SiFastapi, SiFlask, SiSelenium, SiScrapy, SiPostgresql, SiTypescript, SiGooglecloud, SiGitlab, SiGo, SiAzuredevops } from 'react-icons/si';
 import Hello from '../assets/static/avatar1.svg';
 import fullstackIllustration from '../assets/static/fullstack.svg';
 import learningIllustration from '../assets/static/learning.svg';
@@ -53,16 +53,13 @@ const Home = () => {
           <section className={`py-16 transition-all duration-1000 ${expertiseVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <h2 className="text-4xl font-bold text-center mb-8">Expertise</h2>
             
-            <div className="flex flex-wrap justify-center text-4xl mb-8 space-x-4">              
+            <div className="flex flex-wrap justify-center items-center text-4xl mb-8 space-x-4">
+              <SiGo className="text-blue-600 text-6xl" />
               <FaPython className="text-blue-500" />
               <SiFastapi className="text-teal-500" />
               <SiFlask className="text-gray-500" />
-              <FaJava className="text-blue-500" />
-              <SiSpringboot className="text-red-500" />              
               <SiSelenium className="text-yellow-500" />
               <SiScrapy className="text-green-500" />
-              <SiPytorch className="text-purple-500" />
-              <SiTensorflow className="text-red-500" />
               <FaHtml5 className="text-orange-500" />
               <FaCss3Alt className="text-blue-400" />
               <FaJs className="text-yellow-400" />
@@ -70,8 +67,11 @@ const Home = () => {
               <FaReact className="text-blue-300" />
               <SiPostgresql className="text-blue-600" />
               <FaDatabase className="text-gray-500" />
+              <FaDocker className="text-blue-400" />
               <FaAws className="text-orange-400" />
               <SiGooglecloud className="text-blue-500" />
+              <SiAzuredevops className="text-blue-500" />
+              <FaGithub className="text-black" />
               <FaGitAlt className="text-orange-600" />
               <SiGitlab className="text-orange-500" />
             </div>

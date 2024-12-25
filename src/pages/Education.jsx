@@ -12,7 +12,6 @@ const Education = () => {
   const [skillsVisible, setSkillsVisible] = useState(false);
   const [certificationsVisible, setCertificationsVisible] = useState(false);
   const [extracurricularVisible, setExtracurricularVisible] = useState(false);
-  const [mtechOpen, setMtechOpen] = useState(false);
 
   const certifications = [
     { 
@@ -99,11 +98,11 @@ const Education = () => {
                       <FaLaptopCode className="mr-2" /> Technical Skills
                     </h3>
                     <ul className="list-disc list-inside">
-                      <li>Programming Languages: Python, TypeScript, JavaScript</li>
+                      <li>Programming Languages: Golang, Python, TypeScript, JavaScript</li>
                       <li>Web Technologies: React, Node.js, Flask</li>
-                      <li>Frameworks: Scrappy, Selenium, FastAPI, MicroServices</li>
+                      <li>Frameworks: Scrappy, Selenium, Django Rest Framework, FastAPI</li>
                       <li>Database: PostgreSQL, SQLite</li>
-                      <li>Cloud Platforms: AWS, Google Cloud Platform</li>
+                      <li>Cloud Platforms: AWS, Google Cloud Platform, Azure</li>
                     </ul>
                   </div>
                 </div>
