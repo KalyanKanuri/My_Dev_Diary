@@ -52,7 +52,7 @@ const Home = () => {
         <ScrollTrigger onEnter={() => setExpertiseVisible(true)} onExit={() => setExpertiseVisible(false)}>
           <section className={`py-16 transition-all duration-1000 ${expertiseVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <h2 className="text-4xl font-bold text-center mb-8">Expertise</h2>
-            
+
             <div className="flex flex-wrap justify-center items-center text-4xl mb-8 space-x-4">
               <SiGo className="text-blue-600 text-6xl" />
               <FaPython className="text-blue-500" />
@@ -75,7 +75,7 @@ const Home = () => {
               <FaGitAlt className="text-orange-600" />
               <SiGitlab className="text-orange-500" />
             </div>
-            
+
             <ScrollTrigger onEnter={() => setCardVisible(true)} onExit={() => setCardVisible(false)}>
               <div className={`grid grid-cols-1 md:grid-cols-2 gap-8 transition-all duration-1000 ${cardVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
                 <div className="card bg-base-200 shadow-xl">

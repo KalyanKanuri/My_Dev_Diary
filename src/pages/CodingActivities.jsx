@@ -42,19 +42,19 @@ const CodingActivity = () => {
           <section className={`mb-16 transition-all duration-1000 ${statsVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <h2 className="text-4xl font-bold mb-8 text-center">Key Stats</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <StatCard 
+              <StatCard
                 icon={<FaCode className="text-4xl text-primary" />}
                 title="Languages Used"
               >
                 <p className="text-3xl font-bold">5+</p>
               </StatCard>
-              <StatCard 
+              <StatCard
                 icon={<FaClock className="text-4xl text-secondary" />}
                 title="Coding Time"
               >
-                <img 
-                  href="https://codetime.dev" 
-                  alt="CodeTime Badge" 
+                <img
+                  href="https://codetime.dev"
+                  alt="CodeTime Badge"
                   src="https://img.shields.io/endpoint?style=social&color=222&url=https%3A%2F%2Fapi.codetime.dev%2Fshield%3Fid%3D21162%26project%3D%26in=0" 
                   className="mt-2"
                 />

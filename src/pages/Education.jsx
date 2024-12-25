@@ -14,7 +14,7 @@ const Education = () => {
   const [extracurricularVisible, setExtracurricularVisible] = useState(false);
 
   const certifications = [
-    { 
+    {
       name: "The Complete Python Developer",
       issuer: "Udemy",
       pdfLink: "https://ude.my/UC-ab34ece9-f263-492d-99cd-7366ce955890"
@@ -34,7 +34,7 @@ const Education = () => {
   const EducationCard = ({ title, isCollapsible = false, isOpen, toggleOpen, children }) => (
     <div className="card bg-base-200 shadow-xl mb-4">
       <div className="card-body">
-        <h3 
+        <h3
           className={`card-title text-2xl mb-4 flex items-center justify-between ${isCollapsible ? 'cursor-pointer' : ''}`}
           onClick={isCollapsible ? toggleOpen : undefined}
         >

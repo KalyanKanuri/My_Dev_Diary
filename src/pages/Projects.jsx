@@ -32,7 +32,7 @@ const Projects = () => {
     {
       title: "Food Ordering Platform (QuickByte)",
       description: "A full-stack Food Ordering application built with Python and Flask. Features include Order Tracking, Payment Support, Admin analytics, and more. Utilizes SQLite for data storage and is deployed on Linux servers.",
-      image: qbImg, 
+      image: qbImg,
       technologies: [
         { icon: <FaPython />, name: "Python", color: "#3776AB" },
         { icon: <SiFlask />, name: "Flask", color: "#000000" },

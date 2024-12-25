@@ -49,7 +49,7 @@ const ContactMe = () => {
               </div>
             </div>
           </section>
-        </ScrollTrigger>    
+        </ScrollTrigger>
 
         {/* Location Section */}
         <ScrollTrigger onEnter={() => setLocationVisible(true)} onExit={() => setLocationVisible(false)}>
