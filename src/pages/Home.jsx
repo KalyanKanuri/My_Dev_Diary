@@ -101,7 +101,7 @@ const Home = () => {
                   <div className="card-body items-center text-center">
                     <h3 className="card-title text-2xl mb-4">Continuous Learning</h3>
                     <ul className="list-disc text-left">
-                      <li>Exploring machine learning and AI technologies</li>
+                      <li>Exploring in Depth Backend Technologies with Google Golang and it's Frameworks</li>
                       <li>Deepening knowledge in cloud computing and serverless architectures</li>
                       <li>Advancing frontend skills with modern frameworks and libraries</li>
                       <li>Studying best practices in software architecture and design patterns</li>
